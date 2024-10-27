@@ -1,0 +1,64 @@
+/* CSS untuk mengatur tampilan kalkulator */
+body {
+  background-color: #bcbccc;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.calculator {
+  background-color: #686c6e;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+.display {
+  background-color: #858383;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #70a5f5;
+}
+.button.operator {
+  background-color: #70a5f5;
+  color: #000000;
+}
+.button.operator:hover {
+  background-color: #70a5f5;
+}
+.button.equals {
+  background-color: #70a5f5;
+  grid-column: span 2;
+}
+.button.equals:hover {
+  background-color: #70a5f5;
+}
+.button.clear {
+  background-color: #70a5f5;
+  grid-column: span 2;
+}
+.button.clear:hover {
+  background-color: #70a5f5;
+}
